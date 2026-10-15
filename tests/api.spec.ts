@@ -52,7 +52,7 @@ const res= await request.patch(`${baseUrl}/users/2`,{
     }
 })
 
-expect(res.status()).toBe(200)
+expect(res.status()).toBe(201)
 const text= await res.text()
 expect(text).toContain("Business failure")
 console.log(await res.json())  
